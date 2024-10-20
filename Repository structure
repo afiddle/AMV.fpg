@@ -1,0 +1,14 @@
+github-repository/
+│
+├── README.md
+├── docs/
+│   ├── Activity1_AutoCoT_Prompts.md
+│   ├── Activity2_Implementing_AutoCoT.md
+│   └── Activity3_Comparative_Analysis.md
+├── images/
+│   ├── example_prompt1.png
+│   └── example_comparison_chart.png
+└── code/
+    ├── generate_prompts.py
+    ├── auto_cot_task.py
+    └── compare_models.py
