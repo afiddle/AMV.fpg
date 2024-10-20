@@ -209,7 +209,7 @@ The approach is illustrated in the following diagram (attached):
 
 
 >>>
-Based on the diagram you uploaded and the provided context, it seems to illustrate the Automatic Chain of Thought (Auto-CoT) process, a method that aims to automate the reasoning steps within a language model, as opposed to manual Chain of Thought (CoT) techniques.
+<<< Based on the diagram you uploaded and the provided context, it seems to illustrate the Automatic Chain of Thought (Auto-CoT) process, a method that aims to automate the reasoning steps within a language model, as opposed to manual Chain of Thought (CoT) techniques.
 
 Let’s analyze the key concepts and use the structure of your provided module template (without using LaTeX) to explain Automatic Chain of Thought Prompting in Large Language Models.
 
