@@ -146,7 +146,8 @@ Distribuindo o conteúdo fornecido nos arquivos `Tools_Introduction.md`, `Connec
 
 Se precisar de mais assistência ou de uma tradução para o inglês, sinta-se à vontade para solicitar!
 
-Continuing the Distribution of Content into Documentation Files
+<<<
+<<< Continuing the Distribution of Content into Documentation Files
 
 Let’s continue distributing the remaining content into the respective documentation files (Tools_Introduction.md, Connectors_Overview.md, and Skills_Basics.md) based on the provided knowledge graph. Additionally, we’ll update the README.md to ensure comprehensive coverage and easy navigation.
 
