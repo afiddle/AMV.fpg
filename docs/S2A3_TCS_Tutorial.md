@@ -49,6 +49,8 @@ google_search_tool = Tool(
 # Executando a ferramenta
 result = google_search_tool.run("What is the capital of Japan?")
 print(result)
+´´´
+
 
 Explicação:
 Aqui, uma ferramenta de busca é configurada para o LLM, que consulta a API do Google e retorna o resultado. Este é um exemplo clássico onde um modelo pode usar uma “ferramenta” para buscar informações atualizadas.
@@ -58,7 +60,7 @@ Vantagens das Ferramentas
 	•	Interação Dinâmica com o Mundo Real: LLMs podem buscar informações atualizadas em tempo real, algo que, por si só, eles não podem fazer com seus dados de treinamento.
 	•	Precisão e Especialização: Ao integrar calculadoras ou ferramentas financeiras, o LLM ganha precisão em cálculos complexos que envolvem matemática ou estatísticas avançadas.
 
----
+
 
 ### `docs/Connectors_Overview.md`
 
