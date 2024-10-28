@@ -1,11 +1,12 @@
-Key Takeaway: Feature engineering is a critical step in developing effective machine learning models. It involves using domain knowledge and intuition to create new features from existing ones, often leading to significant performance improvements.
-Main Points:
+> Key Takeaway: 
+Feature engineering is a critical step in developing effective machine learning models. It involves using domain knowledge and intuition to create new features from existing ones, often leading to significant performance improvements.
+> Main Points:
 Feature Selection Impacts Performance: The choice of features greatly influences a machine learning algorithm's performance. Selecting or creating the right features can be crucial for successful implementation.
 Feature Engineering Defined: Feature engineering involves designing new features, typically by transforming or combining existing ones. This process leverages knowledge and intuition about the problem to facilitate more accurate predictions by the learning algorithm.
 Illustrative Example: House Price Prediction: The excerpt uses predicting house prices to illustrate feature engineering. Initially, the model uses "frontage" (width) and "depth" of the lot as features. However, recognizing that land area (frontage * depth) might be a more relevant predictor, a new feature "area" is engineered.
 Benefits of Engineered Features: Incorporating the "area" feature provides the model with more flexibility. It can now learn the importance of frontage, depth, and area individually, potentially leading to a more accurate price prediction model.
 Non-Linearity: This type of feature engineering enables the model to fit non-linear functions to the data, allowing it to capture more complex relationships between features and the target variable.
-Quote:
+> Quote:
 "Feature engineering, in which you might use your knowledge or intuition about the problem to design new features usually by transforming or combining the original features of the problem in order to make it easier for the learning algorithm to make accurate predictions."
-Conclusion:
+> Conclusion:
 Feature engineering is a powerful technique for enhancing machine learning models. By carefully crafting features based on domain expertise, developers can empower their algorithms to make more accurate and insightful predictions.
