@@ -1,0 +1,264 @@
+DL_C2W3_Quiz_Improving_Deep_Neural_Networks.txt
+Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization
+Week 3
+Hyperparameter tuning, Batch Normalization, Programming Frameworks
+
+## 1. 
+Question 1
+With a relatively small set of hyperparameters, it is OK to use a grid search. True/False?
+
+False
+
+True
+
+## 2.
+Question 2
+Every hyperparameter, if set poorly, can have a huge negative impact on training, and so all hyperparameters are about equally important to tune well. True or False?
+
+True
+
+False
+
+## 3.
+Question 3
+Even if enough computational power is available for hyperparameter tuning, it is always better to babysit one model ("Panda" strategy), since this will result in a more custom model. True/False?
+
+True
+
+False
+
+## 4.
+Question 4
+Knowing that the hyperparameter 
+α
+αalpha should be in the range of 
+0.001
+0.0010, point, 001 and 
+1.0
+1.01, point, 0. Which of the following is the recommended way to sample a value for 
+α
+αalpha?
+
+
+r = -5*np.random.rand()
+
+alpha = 10**r
+
+
+r = np.random.rand()
+
+alpha = 0.001 + r*0.999
+
+
+r = 4*np.random.rand()
+
+alpha = 10**r
+
+
+r = -3*np.random.rand()
+
+alpha = 10**r
+
+## 5.
+Question 5
+Once good values of hyperparameters have been found, those values should be changed if new data is added or a change in computational power occurs. True/False?
+
+True
+
+False
+
+## 6.
+Question 6
+When using batch normalization it is OK to drop the parameter 
+W
+[
+l
+]
+W 
+[l]
+ W, start superscript, open bracket, l, close bracket, end superscript from the forward propagation since it will be subtracted out when we compute 
+z
+~
+[
+l
+]
+=
+γ
+z
+normalize
+[
+l
+]
++
+β
+[
+l
+]
+z
+~
+  
+[l]
+ =γz 
+normalize
+[l]
+​	
+ +β 
+[l]
+ z, with, \tilde, on top, start superscript, open bracket, l, close bracket, end superscript, equals, gamma, z, start subscript, start text, n, o, r, m, a, l, i, z, e, end text, end subscript, start superscript, open bracket, l, close bracket, end superscript, plus, beta, start superscript, open bracket, l, close bracket, end superscript. True/False?
+
+True
+
+False
+
+## 7.
+Question 7
+When using normalization:
+
+z
+n
+o
+r
+m
+(
+i
+)
+=
+z
+(
+i
+)
+−
+μ
+σ
+2
++
+ε
+z 
+norm
+(i)
+​	
+ = 
+σ 
+2
+ +ε
+​	
+ 
+z 
+(i)
+ −μ
+​	
+ z, start subscript, n, o, r, m, end subscript, start superscript, left parenthesis, i, right parenthesis, end superscript, equals, start fraction, z, start superscript, left parenthesis, i, right parenthesis, end superscript, minus, mu, divided by, square root of, sigma, squared, plus, \varepsilon, end square root, end fraction
+
+In case 
+σ
+σsigma is too small, the normalization of 
+z
+(
+i
+)
+z 
+(i)
+ z, start superscript, left parenthesis, i, right parenthesis, end superscript may fail since division by 0 may be produced due to rounding errors. True/False?
+
+False
+
+True
+
+## 8.
+Question 8
+Which of the following statements about 
+γ
+γgamma and 
+β
+βbeta in Batch Norm are true? 
+
+β
+βbeta and 
+γ
+γgamma are hyperparameters of the algorithm, which we tune via random sampling. 
+
+The optimal values are 
+γ
+=
+σ
+2
++
+ε
+γ= 
+σ 
+2
+ +ε
+​	
+ gamma, equals, square root of, sigma, squared, plus, \varepsilon, end square root, and 
+β
+=
+μ
+β=μbeta, equals, mu.
+
+They can be learned using Adam, Gradient descent with momentum, or RMSprop, not just with gradient descent. 
+
+They set the variance and mean of the linear variable 
+z
+~
+[
+l
+]
+z
+  
+[l]
+ z, with, \widetilde, on top, start superscript, open bracket, l, close bracket, end superscript of a given layer. 
+
+There is one global value of 
+γ
+∈
+ℜ
+γ∈ℜgamma, \in, \Re and one global value of 
+β
+∈
+ℜ
+β∈ℜbeta, \in, \Re for each layer, and these apply to all the hidden units in that layer. 
+
+## 9.
+Question 9
+After training a neural network with Batch Norm, at test time, to evaluate the neural network on a new example you should:
+
+Use the most recent mini-batch’s value of 
+μ
+μmu and 
+σ
+2
+σ 
+2
+ sigma, squared to perform the needed normalizations.
+
+If you implemented Batch Norm on mini-batches of (say) 256 examples, then to evaluate on one test example, duplicate that example 256 times so that you’re working with a mini-batch the same size as during training.
+
+Skip the step where you normalize using 
+μ
+μmu and 
+σ
+2
+σ 
+2
+ sigma, squared since a single test example cannot be normalized. 
+
+Perform the needed normalizations, use 
+μ
+μmu and 
+σ
+2
+σ 
+2
+ sigma, squared estimated using an exponentially weighted average across mini-batches seen during training. 
+
+## 10.
+Question 10
+Which of the following are some recommended criteria to choose a deep learning framework?
+
+Running speed.
+
+It must run exclusively on cloud services, to ensure its robustness.
+
+It must be implemented in C to be faster.
+
+It must use Python as the primary language.
